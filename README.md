@@ -12,8 +12,8 @@ Clone the repository to your local computer.
 
 ***For other people who want to help***: Join our WL4Editor [discord server](https://discord.gg/EQ6JhvP) and contact ssp (shinespeciall). we are glad to see more people who have some knowledge on GBA ROM reverse engineering join us and help us make the WL4 editor & romhack community better.
 
-#### open xml file
-the `WL4.xml` file in the repository is the least things you need.
+#### the xml file
+the `WL4.xml` file in the repository is the least things you need. We use this instead of a ghidra server to do version control.
 you need to have the correct verion of wl4 gba ROM first. it should have the correct hask:
 `SHA1: b9fe05a8080e124b67bce6a623234ee3b518a2c1`
 `MD5: 5fe47355a33e3fabec2a1607af88a404`
@@ -27,6 +27,9 @@ After opening the `Ghidra Code Browser`, you usually need to do an auto analysis
 #### export xml
 Once you add some new symbols of info into the project which can help other people understand the WL4 ROM more, you are supposed to share your new finding with exported xml. Save changes first by pressing `Ctrl + S`. Then you can close the `Ghidra Code Browser`. Now we go back to the `Ghidra PROJECT` window which is supposed to be opened all the time. Now we right click on the file in the ListView and click `Export`. In the `Export Dialog` we change the format to `XML`, then hit OK and overwrite the previous `WL4.xml` you cloned from this repository.
 Now you can do the git job and commit or PR the changes.
+
+#### Continuous working
+If you have already created a WL4 project in Ghidra, you need to delete the file from the ListView in `Ghidra PROJECT` window first, then drag and drop the xml into the project in the `Ghidra PROJECT` window again and redo the import. You need to do this every time you launch the Ghidra, since we only use xml file to do version control. we always need to include the changes made by other people first before continue the work.
 
 #### Reverse Engineering job or other works
 Not gonna teach something here. If you are familiar with IDA pro, you can get used to Ghidra quickly. We are supposed to dig depper into the WL4 ROM or write java & python script to do more crazy stuff in the future.
