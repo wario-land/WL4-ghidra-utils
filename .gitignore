@@ -30,3 +30,5 @@ replay_pid*
 # Ghidra stuff
 *.gpr
 *.rep/
+*.lock
+*.lock~
