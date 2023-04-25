@@ -23,6 +23,7 @@ now, rename your ROM file like this: `WL4.bytes` and put it into the same folder
 We launch Ghidra first (according to its [readme](https://github.com/NationalSecurityAgency/ghidra)) and you will see the small `Ghidra PROJECT` window. We create a `Non-shared Project` first. It can be created anywhere else in your computer. the `WL4.bytes` and `WL4.xml` should be there too.
 after creating a new project in Ghidra, we drag and drop the xml into that `Ghidra PROJECT` window. When the import dialog pop out, we choose a language for it by: `ARM v7 32 LE (little Endian) Visual Studio`. Then hit `OK` to let it process the xml. After everything being finished, we `double click` the `WL4` file in the listview to launch the `Ghidra Code Browser`.
 After opening the `Ghidra Code Browser`. Now you can do the job. **WARNING: If you want to auto analysis in the `Ghidra Code Browser` by `menu -> Analysis -> Auto Analyze` to reparse the ROM. DON'T select the "ARM Symbol" entry.** It will mess up the address of some global variables and let them all align to even numbers. It happens on Ghidra v10.1.5. idk if it is caused by segment settings or something else. I have no idea how to fix it.
+
 ![WL4Editor sample image](images/DONTLetGhidraToAnalyzeARMSymbol.png)
 
 #### export xml
