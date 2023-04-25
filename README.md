@@ -1,5 +1,5 @@
 # WL4-ghidra-utils
-the repository to maintain the WL4 ROM reverse engineering job on Ghidra by xml file, and some helper scripts used in Ghidra.
+the repository is used to maintain the WL4 ROM reverse engineering job on Ghidra by xml file, and some helper scripts used in Ghidra.
 
 ### How to contribute? 
 #### Tools
@@ -32,4 +32,4 @@ Now you can do the git job and commit or PR the changes.
 If you have already created a WL4 project in Ghidra, you need to delete the file from the ListView in `Ghidra PROJECT` window first, then drag and drop the xml into the project in the `Ghidra PROJECT` window again and redo the import. You need to do this every time you launch the Ghidra, since we only use xml file to do version control. we always need to include the changes made by other people first before continue the work.
 
 #### Reverse Engineering job or other works
-Not gonna teach something here. If you are familiar with IDA pro, you can get used to Ghidra quickly. We are supposed to dig depper into the WL4 ROM or write java & python script to do more crazy stuff in the future.
+Not gonna teach something here. If you are familiar with IDA pro, you can get used to Ghidra quickly. We are supposed to dig deeper into the WL4 ROM or write java & python script to do more crazy stuff in the future.
