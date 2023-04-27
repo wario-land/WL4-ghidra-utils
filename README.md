@@ -1,5 +1,6 @@
 # WL4-ghidra-utils
 the repository is used to maintain the WL4 ROM reverse engineering job on Ghidra by xml file, and some helper scripts used in Ghidra.
+> NOTICE: DO NOT CONTRIBUTE TO THE XML FILE IN THIS REPOSITORY BEFORE WE SOLVE THE FUNCTION PARAMETER IMPORT ISSUE. other changes on the repository is acceptable.
 
 ### How to contribute? 
 #### Tools
